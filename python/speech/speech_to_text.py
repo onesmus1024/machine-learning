@@ -8,3 +8,8 @@ with sr.AudioFile("./maybe-next-time.wav") as source:
     # recognize (convert from speech to text)
     text = r.recognize_google(audio_data)
     print(text)
+
+
+
+
+    

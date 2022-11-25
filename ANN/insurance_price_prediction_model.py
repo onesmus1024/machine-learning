@@ -1,5 +1,4 @@
 import tensorflow as tf
-import seaborn as sn
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt 
@@ -27,7 +26,6 @@ x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.2)
 
 model =keras.Sequential([
     layers.Dense(512,input_shape=[4]),
-    layers.Dropout(0.1),
     layers.Dense(1)
 ])
 
